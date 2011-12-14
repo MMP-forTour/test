@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:background="@drawable/background">
+    <FrameLayout android:layout_height="fill_parent" android:layout_weight="8.3" android:id="@+id/frameLayout1" android:layout_width="match_parent">
+
+     	<LinearLayout
+     	    android:id="@+id/linearLayout2"
+     	    android:layout_width="match_parent"
+     	    android:layout_height="match_parent" >
+
+     	    <ImageButton
+     	        android:id="@+id/buttonBACK"
+     	        android:layout_width="0dp"
+     	        android:layout_height="wrap_content"
+     	        android:layout_gravity="center_vertical"
+     	        android:layout_weight="1"
+     	        android:background="#00000000"
+     	        android:src="@android:drawable/ic_media_rew" 
+     	     />
+
+     	    <EditText
+     	        android:id="@+id/titre"
+     	        android:layout_width="0dp"
+     	        android:layout_height="wrap_content"
+     	        android:layout_gravity="center"
+     	        android:gravity="center"
+     	        android:layout_weight="3"
+     	        android:background="#00000000"
+     	        android:hint="Album Title"
+     	        android:textColor="#FFFFFF"
+     	        android:textSize="35dp" />
+
+     	    <ImageButton
+     	        android:id="@+id/buttonOK"
+     	        android:layout_width="0dp"
+     	        android:layout_height="wrap_content"
+     	        android:layout_gravity="center_vertical"
+     	        android:layout_weight="1"
+     	        android:background="#00000000"
+     	        android:src="@android:drawable/ic_media_ff" />
+
+     	</LinearLayout>
+
+    </FrameLayout>
+    <FrameLayout android:layout_height="fill_parent" android:layout_weight="3" android:id="@+id/frameLayout1" android:layout_width="match_parent">
+         <ImageView android:id="@+id/iv_photo" android:layout_width="fill_parent" android:layout_gravity="center" android:layout_height="fill_parent"/>
+          <ImageView android:id="@+id/pframe" android:src="@drawable/photo_frame" android:layout_width="fill_parent" android:layout_gravity="center" android:layout_height="fill_parent"/>
+    </FrameLayout>
+    <FrameLayout android:layout_height="fill_parent" android:layout_weight="7" android:id="@+id/frameLayout2" android:layout_width="match_parent">       
+        <LinearLayout android:id="@+id/linearLayout1" android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical">
+        	<EditText android:layout_marginTop="10dp" android:hint="About this Story..." android:layout_width="match_parent" android:layout_height="wrap_content" android:id="@+id/editTextEMStory" android:gravity="center"/>
+        	<EditText android:hint="Location of Story..." android:layout_width="match_parent" android:layout_height="wrap_content" android:id="@+id/editTextEMLocation"/>
+        </LinearLayout>
+    </FrameLayout> 
+</LinearLayout>

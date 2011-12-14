@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:background="@drawable/background">
+    <FrameLayout android:layout_height="fill_parent" android:layout_weight="8.3" android:id="@+id/frameLayout1" android:layout_width="match_parent">
+    	<LinearLayout
+     	    android:id="@+id/linearLayout2"
+     	    android:layout_width="match_parent"
+     	    android:layout_height="match_parent" >
+
+
+     	    <ImageButton
+     	        android:id="@+id/buttonBACK"
+     	        android:layout_width="0dp"
+     	        android:layout_height="wrap_content"
+     	        android:layout_gravity="center_vertical"
+     	        android:layout_weight="1"
+     	        android:background="#00000000"
+     	        android:src="@android:drawable/ic_media_rew" 
+     	     />
+
+
+     	    <EditText
+     	        android:id="@+id/titre"
+     	        android:layout_width="0dp"
+     	        android:layout_height="wrap_content"
+     	        android:layout_gravity="center"
+     	        android:gravity="center"
+     	        android:layout_weight="3"
+     	        android:background="#00000000"
+     	        android:hint="Album Title"
+     	        android:textColor="#FFFFFF"
+     	        android:textSize="35dp" />
+
+     	    <ImageButton
+     	        android:id="@+id/buttonOK"
+     	        android:layout_width="0dp"
+     	        android:layout_height="wrap_content"
+     	        android:layout_gravity="center_vertical"
+     	        android:layout_weight="1"
+     	        android:background="#00000000"
+     	        android:src="@android:drawable/ic_media_ff" />
+
+     	</LinearLayout>
+    </FrameLayout>
+    <FrameLayout android:layout_height="fill_parent" android:layout_weight="3" android:id="@+id/frameLayout1" android:layout_width="match_parent">
+         <ImageView android:id="@+id/imageViewOPImage" android:layout_width="fill_parent" android:layout_gravity="center" android:layout_height="fill_parent"/>
+         <ImageView android:id="@+id/pframe" android:src="@drawable/photo_frame" android:layout_width="fill_parent" android:layout_gravity="center" android:layout_height="fill_parent"/>
+
+     	<EditText
+         android:text=""
+         android:id="@+id/edittextOPStory"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignBottom="@+id/imageViewOPImage"
+         android:layout_alignLeft="@+id/imageViewOPImage"
+         android:layout_alignRight="@+id/imageViewOPImage"
+         android:layout_alignTop="@+id/imageViewOPImage"
+         android:layout_gravity="bottom|center"
+         android:layout_marginLeft="30dip"
+         android:layout_marginRight="30dip"
+         android:layout_marginBottom="10dip"
+         android:background="#00000000"
+         android:editable="false"
+         android:focusable="false"
+         android:hint="Story"
+         android:inputType="textMultiLine" >
+    	 </EditText>
+    </FrameLayout>
+    
+    <FrameLayout android:layout_height="fill_parent" android:layout_weight="7" android:id="@+id/frameLayout2" android:layout_width="match_parent">       
+        <LinearLayout android:id="@+id/linearLayout1"  android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical">   
+            <LinearLayout android:id="@+id/linearLayout2" android:layout_weight="7" android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical"/>      	  
+        	<LinearLayout android:id="@+id/linearLayout3" android:layout_weight="2" android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical">  
+                <EditText 
+        	    android:hint="Location of Story..." 
+        	    android:layout_width="match_parent" 
+        	    android:layout_height="wrap_content" 
+        	    android:background="#00000000"
+         		android:editable="false"
+         		android:inputType="textMultiLine" 
+        	    android:id="@+id/editTextOPLocation"
+        	    android:textColor="@android:color/white"
+        	    android:focusable="false"
+        	    android:layout_marginTop="5dip"
+        	    android:layout_marginLeft="30dip"
+        		/>
+        		<EditText 
+        	    android:hint="Time of Story..." 
+        	    android:layout_width="match_parent" 
+        	    android:layout_height="wrap_content" 
+        	    android:background="#00000000"
+         		android:editable="false"
+         		android:inputType="textMultiLine" 
+        	    android:id="@+id/editTextOPTime"
+        	    android:textColor="@android:color/white"
+        	    android:focusable="false"
+        	    android:layout_marginTop="5dip"
+        	    android:layout_marginLeft="30dip"
+        		/>
+            </LinearLayout>
+            </LinearLayout>
+    </FrameLayout> 
+</LinearLayout>
